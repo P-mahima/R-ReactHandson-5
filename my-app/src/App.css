@@ -1,0 +1,99 @@
+*
+{
+  background-image: linear-gradient(to right, pink , skyblue,pink);
+}
+.main
+{
+  text-shadow: 0px 0px 5px grey;
+  text-align: center;
+  color: red;
+  animation: main1 3s infinite alternate;
+}
+@keyframes main1
+{
+  0%
+  {
+      transform:scaleX(0.5)
+
+  }
+}
+.information
+{
+  text-align: center;
+  color:darkviolet;
+}
+.button
+{
+  text-align: center;
+  width: 90px;
+  padding: 5px;
+  font-size: 15px;
+  font-weight: bolder;
+  color: blue;
+  border-radius: 20px;
+  display: flex;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 45%;
+  /* align-items: center; */
+  animation: button 3s infinite alternate;
+}
+@keyframes button
+{
+  
+  0%
+  {
+      transform:skewX(-30deg)
+
+  }
+  100%
+  {
+      transform:skewX(30deg)
+  }
+}
+.space
+{
+  line-height: 80%;
+  text-align: center;
+  color:darkviolet;
+}
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
